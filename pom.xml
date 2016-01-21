@@ -43,6 +43,10 @@
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
         </repository>
+        <repository>
+            <id>com.microsoft.alm</id>
+            <url>http://artifacts.cloudapp.net:8081/nexus/content/repositories/snapshots</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -61,24 +65,24 @@
 
         <!-- Microsoft TFS REST Client -->
         <dependency>
-            <groupId>com.microsoft.vss.sdk</groupId>
+            <groupId>com.microsoft.vss.sdk.httpclient</groupId>
             <artifactId>com.microsoft.vss.client.core</artifactId>
-            <version>0.3.0</version>
+            <version>0.4.2-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.vss.sdk</groupId>
+            <groupId>com.microsoft.vss.sdk.httpclient</groupId>
             <artifactId>com.microsoft.teamfoundation.client.core</artifactId>
-            <version>0.3.0</version>
+            <version>0.4.2-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.vss.sdk</groupId>
+            <groupId>com.microsoft.vss.sdk.httpclient</groupId>
             <artifactId>com.microsoft.teamfoundation.client.build2</artifactId>
-            <version>0.3.0</version>
+            <version>0.4.2-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.vss.sdk</groupId>
+            <groupId>com.microsoft.vss.sdk.httpclient</groupId>
             <artifactId>com.microsoft.teamfoundation.client.distributedtask</artifactId>
-            <version>0.3.0</version>
+            <version>0.4.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
