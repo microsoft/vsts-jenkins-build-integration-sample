@@ -1,0 +1,25 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:entry field="serverUrl" title="VSO Server URL">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry field="username" title="Username">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry field="password" title="Password">
+        <f:password />
+    </f:entry>
+
+    <f:validateButton title="Test Server Connection" progress="Connecting to server..."
+                      method="testConnection" with="serverUrl,username,password"/>
+
+    <f:entry field="project" title="Project">
+        <f:select />
+    </f:entry>
+
+    <f:entry field="buildDefinition" title="Build Definition">
+        <f:select />
+    </f:entry>
+</j:jelly>
